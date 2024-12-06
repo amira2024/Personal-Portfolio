@@ -1,0 +1,267 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #454150;
+}
+
+header {
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+#portfolio .project {
+    margin: 1.5rem 0;
+}
+
+#portfolio .project img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+/* Home Section Styling */
+
+#home {
+    height: 100vh; 
+    width: 100%;   
+    margin: 0;     
+    padding: 0;    
+    overflow: hidden; 
+    position: relative; 
+}
+/* Background sanimation for home section*/
+#vanta-bg {
+
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    text-align: center;
+}
+
+#vanta-bg h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+#vanta-bg p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Typing my Name out */
+.typewriter-text {
+    overflow: hidden;
+    position: relative;
+    width: 18em;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 38px;
+    white-space: nowrap;
+  
+    animation: typewriter 4s steps(11) 1s 1 normal both,  /* 14 steps for 14 characters */
+    blinkTextCursor 400ms steps(11) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 8em; /* Adjust width to match the number of characters */
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+      border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+      border-right-color: transparent;
+    }
+}
+/* About me Section */
+#me {
+    padding: 70px;
+}
+
+.me-container {
+    display: flex;
+    align-items: center; /* Aligns image and text vertically */
+}
+
+#amiraimg {
+    width: 350px; /* Adjust image size */
+    height: auto;
+    margin-right: 90px; /* Adds spacing between image and text */
+    border-radius: 10px; /* Optional: rounds the edges of the image */
+}
+
+.text-content {
+    max-width: 600px; /* Restricts text width for readability */
+    line-height: 1.6; /* Adds line spacing */
+}
+
+#timeline {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.timeline-item {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item span {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+/* Contact Section */
+#contact {
+
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Container for the form */
+.contact-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Title styling */
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Form group to structure input fields */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Label styling */
+.form-group label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Input and Textarea styling */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #fcb8ce; /* Highlight input fields on focus */
+}
+
+/* Button styling */
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #fcb8ce;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #f7a8c1; /* Button color change on hover */
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    #contact {
+        padding: 30px 0;
+    }
+
+    .contact-container {
+        width: 90%;
+    }
+
+    #contact h2 {
+        font-size: 1.5rem;
+    }
+
+    .submit-btn {
+        padding: 12px 30px;
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Amira's Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Include Three.js CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+        <!-- Include Vanta.js Globe Animation CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.globe.min.js"></script>
+    </head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+   <!-- Home Section -->
+   <section id="home">
+        <div id="vanta-bg">
+            <div class = "typewriter-text"> <h1> Amira Garba</h1></div>
+            <p>A Data Analyst and Researcher passionate about transforming data into actionable insights.</p>
+        </div>
+    </section>
+
+   <!-- About me Section -->
+   <section id="me">
+        <div class="me-container">
+            <img id="amiraimg" src="images/gradAG.JPEG" alt="Amira's Image">
+            <div class="text-content">
+                <p>I plan to pursue a master's in data science.</p>
+                <p>I am curretly pursuing a certificate AWS Archeticht solution associate and CompTIA Security +</p>
+                <p>I have a strong curiosity and passion for applying my knowledge in a variety of ways.</p>
+                <p>Check my timeline of my asccomplishments</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline">
+        <h2>Professional Timeline</h2>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <h3>Data Analyst</h3>
+                <p>French Institute of Research</p>
+                <span>2017</span>
+            </div>
+            <div class="timeline-item">
+                <h3>Data Analyst</h3>
+                <p>Terres Inovia</p>
+                <span>2019</span>
+            </div>
+            <div class="timeline-item">
+                <h3>Data Visualization</h3>
+                <p>Qld Brain Institute</p>
+                <span>2024</span>
+            </div>
+            <div class="timeline-item">
+                <h3>Software Engineer</h3>
+                <p>Datadog</p>
+                <span>2024</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Impact of Viral Trends on Public Engagement</h3>
+            <p>Used R and sentiment analysis to analyze social media ad trends.</p>
+            <img src="assets/images/viral-trends.png" alt="Viral Trends Project">
+        </div>
+        <div class="project">
+            <h3>Business Intelligence Dashboard</h3>
+            <p>Built interactive dashboards in Tableau to analyze profit metrics.</p>
+            <img src="assets/images/bi-dashboard.png" alt="BI Dashboard Project">
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Languages: SQL, Python, R, C++, Java, JavaScript, HTML/CSS</li>
+            <li>Databases: PostgreSQL, MySQL, MongoDB</li>
+            <li>Developer Tools: Git, VS Code, Jupyter, Linux, Shell Scripting</li>
+            <li>Version Control: GitHub</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <form action="send-email.php" method="POST" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Your Message" rows="5"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>© 2024 Amira's Portfolio</p>
+    </footer>
+<!-- VANTA.GLOBE Initialization Script -->
+
+    <script src="script.js"></script>
+</body>
+</html>
