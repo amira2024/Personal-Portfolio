@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Amira's Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles.css">
+
         <!-- Include Three.js CDN -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
         <!-- Include Vanta.js Globe Animation CDN -->
@@ -44,32 +46,24 @@
         </div>
     </div>
 </section>
-
-    <section id="timeline">
-        <h2>Professional Timeline</h2>
-        <div class="timeline-container">
-            <div class="timeline-item">
-                <h3>Data Analyst</h3>
-                <p>French Institute of Research</p>
-                <span>2017</span>
-            </div>
-            <div class="timeline-item">
-                <h3>Data Analyst</h3>
-                <p>Terres Inovia</p>
-                <span>2019</span>
-            </div>
-            <div class="timeline-item">
-                <h3>Data Visualization</h3>
-                <p>Qld Brain Institute</p>
-                <span>2024</span>
-            </div>
-            <div class="timeline-item">
-                <h3>Software Engineer</h3>
-                <p>Datadog</p>
-                <span>2024</span>
-            </div>
-        </div>
-    </section>
+  <!-- Timeline -->
+  <h2>CSS3 Timeline</h2>
+  <p>Please set the $vertical variable to false to see the horizontal version.</p>
+  <ul id='timeline'>
+    <li class='work'>
+      <input class='radio' id='work5' name='works' type='radio' checked>
+      <div class="relative">
+        <label for='work5'>data analyst </label>
+        <span class='date'>2022</span>
+        <span class='circle'></span>
+      </div>
+      <div class='content'>
+        <p>
+data analyst        </p>
+      </div>
+    </li>
+    
+  </ul>
     
     <!-- Portfolio Section -->
     <section id="portfolio">
