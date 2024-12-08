@@ -11,7 +11,7 @@ body {
   padding: 0 5%;
   font-size: 100%;
   font-family: "Noto Sans", sans-serif;
-  color: #eee9dc;
+  color: #eedcdc;
  }
 
 h2 {
@@ -27,7 +27,8 @@ h2 {
   list-style: none;
   margin: 120px 0 0;
   padding: 0;
-  border-top: 8px solid #eee9dc;
+  border-top: 8px solid #eedcdc;
+  color:#454150;
   display: table;
   border-spacing: 30px 0; }
   #timeline li {
@@ -44,7 +45,8 @@ h2 {
   right: 0;
   font-size: 0.95em;
   line-height: 20px;
-  position: absolute; }
+  position: absolute;
+  color:azure; }
 
 .circle {
   margin: 0 auto;
@@ -107,21 +109,23 @@ label {
   overflow: hidden;
   display: block;
   top: 60px;
-  left: 15px; }
+  left: 15px;
+  color:azure; }
 
 .radio {
   display: none; }
   .radio:checked + .relative label {
     cursor: auto;
     width: 400px;
-    transition: width 0.3s linear 0.2s; }
+    transition: width 0.3s linear 0.2s;
+     }
   .radio:checked ~ .content {
     max-height: 180px;
-    border-color: #eee9dc;
+    border-color: #dceee4;
     width: 400px; }
     .radio:checked ~ .content p {
       max-height: 200px;
-      color: #eee9dc;
+      color: #dceee4;
       transition: color 0.3s linear 0.3s; }
 
 /* -------------------------------------
