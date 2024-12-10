@@ -11,9 +11,9 @@ let vantaEffect = VANTA.GLOBE({
     minWidth: 200.00,
     scale: 1.00,
     scaleMobile: 1.00,
-    color: 0xfcb8ce,
+    color: 0xbb0b0b,
     size: 1.10,
-    backgroundColor: 0x454150
+    backgroundColor: 0xe8e0e0
 });
 
 // Resize Vanta Effect when the window is resized
