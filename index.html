@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Amira's Portfolio</title>
-        <link rel="stylesheet" href="style/sstyle.css">
+        <link rel="stylesheet" href="style/style.css">
         <link rel="stylesheet" href="style/horzontaltimeline.css">
 
         <!-- Include Three.js CDN -->
@@ -48,18 +48,20 @@
 
 
    <!-- About me Section -->
-   <section id="me">
+   <section id="me"><h3>About Me</h3>
     <div class="me-container">
+        
+        
         <img id="amiraimg" src="images/gradAG.JPG" alt="Amira's Image">
-        <h3> About Me</h3>
         <div class="text-content">
-            <p>I hold a Bachelor's degree in Informatics with a minor in Computer Science from UMass Amherst. My background combines technical expertise with a passion for addressing real-world challenges.</p>
-            <p>Currently, I am enhancing my skills with certifications in cloud computing and cybersecurity to further solidify my technical foundation.</p>
-            <p>Driven by curiosity and innovation, I am passionate about leveraging technology to solve problems in research, sustainability, and beyond.</p>
-            <p>Explore my timeline for a detailed view of my journey and accomplishments!</p>
+            <p>As a graduate from UMass Amherst with a Bachelor’s in Informatics and a minor in Computer Science, I blend rigorous technical skills with a keen interest in solving complex real-world problems. My journey so far has spanned roles in data analysis, research, and technology implementation, where I’ve consistently driven initiatives aimed at leveraging technology for sustainable and impactful solutions.</p>
+            <p>Currently, I am deepening my expertise in cloud computing and cybersecurity through focused certifications. These efforts are part of my broader commitment to not only enhance my skill set but also to contribute meaningfully to the tech-driven ecosystems in which I operate.</p>
+            <p>My passion for innovation is matched by my dedication to research and development, evident from my projects ranging from energy demand forecasting to enhancing healthcare data systems. With each project, my aim is to push the boundaries of what technology can achieve in public and private sectors.</p>
+            <p>I invite you to explore my timeline and projects to get a fuller picture of my professional trajectory and the contributions I aspire to make.</p>
         </div>
     </div>
 </section>
+
   <!-- Timeline -->
   <h2>TimeLine</h2>
 <p>Expereince and Expected Plans</p>
@@ -226,7 +228,7 @@
     <!-- Project 7 -->
     <div class="project">
       <a href="https://github.com/amira2024/Clue-Text-Game" target="_blank">
-          <img src="assets/images/social-trends.png" alt="Impact of Viral Trends">
+          <img src="images/Screenshot 2024-12-11 100843.png" alt="Impact of Viral Trends">
           <p>Clue Game</p>
       </a>
   </div>
@@ -257,15 +259,12 @@
           <h2>Contact Me</h2>
           <form action="send-email.php" method="POST" id="contact-form">
               <div class="form-group">
-                  <label for="name">Your Name</label>
                   <input type="text" id="name" name="name" required placeholder="Your Name" aria-label="Your Name">
               </div>
               <div class="form-group">
-                  <label for="email">Your Email</label>
                   <input type="email" id="email" name="email" required placeholder="Your Email" aria-label="Your Email">
               </div>
               <div class="form-group">
-                  <label for="message">Your Message</label>
                   <textarea id="message" name="message" required placeholder="Your Message" rows="5" aria-label="Your Message"></textarea>
               </div>
               <button type="submit" class="submit-btn">Send Message</button>

@@ -187,7 +187,7 @@ footer {
     background-color: #d6cccc;
     color: #333333;
     width: 100vw;
-    display: flex; /* Aligns container horizontally */
+     /* Aligns container horizontally */
     justify-content: center; /* Centers child elements horizontally */
 }
 
@@ -198,9 +198,12 @@ footer {
     max-width: 1200px; /* Restricts the width for better alignment */
     margin: 0 auto; /* Centers the container in the section */
 }
+.me-container h3{
+display: block;
+}
 
 #amiraimg {
-    width: 350px;
+    width: 300px;
     height: auto;
     margin-right: 30px; /* Adjust spacing between image and text */
     border-radius: 10px;
@@ -210,6 +213,7 @@ footer {
     max-width: 600px;
     line-height: 1.6;
     text-align: center; /* Center-aligns text */
+    
 }
 
 
