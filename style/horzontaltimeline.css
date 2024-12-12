@@ -17,6 +17,14 @@ h2 {
 /* -------------------------------------
  * Timeline
  * ------------------------------------- */
+ .title{
+  text-align: center;
+}
+ .timeline {
+  font-size: 20px;
+ }
+
+ 
 #timeline {
   list-style: none;
   margin: 120px 0 0;
@@ -40,7 +48,7 @@ h2 {
   font-size: 0.95em;
   line-height: 20px;
   position: absolute;
-  color:azure; }
+  color:rgb(255, 255, 255); }
 
 .circle {
   margin: 0 auto;
@@ -50,11 +58,15 @@ h2 {
   width: 10px;
   height: 10px;
   background: #454150;
-  border: 5px solid #eee9dc;
+  border: 5px solid #ffffff;
   border-radius: 50%;
   display: block;
   position: absolute; }
 
+ #future{
+  background:red;
+  border:5px solid rgb(85, 7, 7);
+ }
 .content {
   width: 200px;
   max-height: 0;
@@ -115,15 +127,16 @@ label {
      }
   .radio:checked ~ .content {
     max-height: 180px;
-    border-color: #dceee4;
+    border-color: #ffffff;
     width: 400px; }
     .radio:checked ~ .content p {
       max-height: 200px;
-      color: #dceee4;
+      color: #ffffff;
       transition: color 0.3s linear 0.3s; }
 
-/* -------------------------------------
- * Mobile phones (vertical version only)
- * ------------------------------------- */
-
-/*# sourceMappingURL=time.css.map */
+.location{
+  font-weight: bold ;
+}
+#company {
+  font-style: italic; 
+}
