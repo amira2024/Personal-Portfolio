@@ -11,7 +11,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
         <!-- Include Vanta.js Globe Animation CDN -->
         <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.globe.min.js"></script>
-    </head>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+   
+      </head>
 <body>
     <!-- Navbar -->
     <header>
@@ -48,8 +50,10 @@
 
 
    <!-- About me Section -->
-   <section id="me"><h3>About Me</h3>
+   <section id="me">
+    <h3>About Me</h3>
     <div class="me-container">
+
         
         
         <img id="amiraimg" src="images/gradAG.JPG" alt="Amira's Image">
@@ -60,13 +64,10 @@
             <p>I invite you to explore my timeline and projects to get a fuller picture of my professional trajectory and the contributions I aspire to make.</p>
         </div>
     </div>
-</section>
+
 
   <!-- Timeline -->
-  <div class = "title">
-   <span class = "timeline"><h2 >TimeLine</h2></span> 
-    <p>Expereince and Expected Plans</p>
-  </div>
+
 
 <ul id='timeline'>
   <li class='work'>
@@ -168,10 +169,11 @@
     </div>
   </li>
 </ul>
-    
+</section> 
     <!-- Portfolio Section -->
     <section id="portfolio">
-      <h2>My Projects</h2>
+      <div id="particles-js"></div>
+      <h2> Projects</h2>
       <div class="projects-container">
           <!-- Project 1 -->
           <div class="project">
@@ -208,13 +210,7 @@
               <p>Tablue</p>
           </a>
       </div>
-      <!-- Project 6 -->
-      <div class="project">
-        <a href="https://github.com/amira2024/Clue-Text-Game" target="_blank">
-            <img src="assets/images/social-trends.png" alt="Impact of Viral Trends">
-            <p>Impact of Viral Trends</p>
-        </a>
-    </div>
+
     <!-- Project 7 -->
     <div class="project">
       <a href="https://github.com/amira2024/Clue-Text-Game" target="_blank">
@@ -222,26 +218,34 @@
           <p>Clue Game</p>
       </a>
   </div>
-  <!-- Project 8 -->
-  <div class="project">
-    <a href="https://github.com/amira2024/Clue-Text-Game" target="_blank">
-        <img src="assets/images/social-trends.png" alt="Impact of Viral Trends">
-        <p>Impact of Viral Trends</p>
-    </a>
-</div>
+
       </div>
   </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Languages: SQL, Python, R, C++, Java, JavaScript, HTML/CSS</li>
-            <li>Databases: PostgreSQL, MySQL, MongoDB</li>
-            <li>Developer Tools: Git, VS Code, Jupyter, Linux, Shell Scripting</li>
-            <li>Version Control: GitHub</li>
-        </ul>
-    </section>
+<!-- Skills Section -->
+<section id="skills">
+  <div id="particles-js"></div>
+
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skill-category">
+            <h3>Languages</h3>
+            <p>SQL, Python, R, C#, Java, JavaScript, HTML/CSS</p>
+        </div>
+        <div class="skill-category">
+            <h3>Databases</h3>
+            <p>PostgreSQL, MySQL, MongoDB</p>
+        </div>
+        <div class="skill-category">
+            <h3>Developer Tools</h3>
+            <p>Git, VS Code, Jupyter, Linux, Shell Scripting, .NET</p>
+        </div>
+        <div class="skill-category">
+            <h3>Version Control</h3>
+            <p>GitHub</p>
+        </div>
+    </div>
+</section>
 
     <!-- Contact Section -->
     <section id="contact">
