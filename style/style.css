@@ -72,7 +72,7 @@ header nav ul li a {
 
 #home {
     height: 100vh;
-    width: 100vw; /* Use 100% instead of 100vw */
+    width: 100vw; 
     margin: 0;
     padding: 0;
     display: flex;
@@ -81,11 +81,11 @@ header nav ul li a {
     overflow: hidden;
     position: relative;
     background-color: #e8e0e0;
-    box-sizing: border-box; /* Include padding and borders in width */
+    box-sizing: border-box; 
 }
 
 #vanta-bg {
-    position: absolute; /* Allow the globe to cover the entire #home section */
+    position: absolute; 
     top: 0;
     left: 0;
     height: 100%;
@@ -94,7 +94,7 @@ header nav ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #333333; /* Black-grey text color */
+    color: #333333; 
     text-align: center;
     z-index: 0;
 }
@@ -118,7 +118,7 @@ header nav ul li a {
     font-size: 38px;
     white-space: nowrap;
   
-    animation: typewriter 4s steps(11) 1s 1 normal both,  /* 14 steps for 14 characters */
+    animation: typewriter 4s steps(11) 1s 1 normal both,  
     blinkTextCursor 400ms steps(11) infinite normal;
 }
 
@@ -127,7 +127,7 @@ header nav ul li a {
         width: 0;
     }
     to {
-        width: 8em; /* Adjust width to match the number of characters */
+        width: 8em;
     }
 }
 
@@ -162,16 +162,15 @@ section {
     background-color: #d6cccc67;
     color: #333333;
     width: 100vw;
-     /* Aligns container horizontally */
-    justify-content: center; /* Centers child elements horizontally */
+    justify-content: center;
 }
 
 .me-container {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centers content inside the container */
-    max-width: 1200px; /* Restricts the width for better alignment */
-    margin: 0 auto; /* Centers the container in the section */
+    justify-content: center; 
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 .me-container h3{
 display: block;
@@ -180,15 +179,14 @@ display: block;
 #amiraimg {
     width: 300px;
     height: auto;
-    margin-right: 30px; /* Adjust spacing between image and text */
+    margin-right: 30px; 
     border-radius: 10px;
 }
 
 .text-content {
     max-width: 600px;
     line-height: 1.6;
-    text-align: center; /* Center-aligns text */
-    
+    text-align: center; /
 }
 
 
@@ -215,17 +213,17 @@ display: block;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    position: relative; /* Needed for positioning the overlay text */
+    position: relative;
 }
 
 .project img {
     width: 100%;
-    height: 100%; /* Stretch the image to fill the container */
-    object-fit: cover; /* Adjust image scaling */
+    height: 100%;
+    object-fit: cover; 
 }
 
 .project p {
-    position: absolute; /* Position overlay over the entire container */
+    position: absolute; 
     top: 0;
     left: 0; 
     width: 100%;
@@ -249,8 +247,8 @@ display: block;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 .project:hover p {
-    visibility: visible; /* Show the overlay on hover */
-    opacity: 1; /* Fully opaque */
+    visibility: visible; 
+    opacity: 1;
 }
 
 
@@ -282,13 +280,12 @@ display: block;
 }
 
 .skill-category {
-    background-color: #e8e0e0; /* Slightly darker greyish-pink */
+    background-color: #e8e0e0; 
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
-    text-align: left; /* Align text to the left */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    text-align: left; 
 }
-
 .skill-category h3 {
     margin: 0 0 10px;
     font-size: 1.2rem;
@@ -298,7 +295,7 @@ display: block;
 .skill-category p {
     margin: 0;
     font-size: 1rem;
-    color: #555555; /* Slightly lighter text */
+    color: #555555; 
 }
 /* Contact Section*/
 
