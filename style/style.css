@@ -195,6 +195,8 @@ display: block;
     text-align: center;
 }
 .projects-container {
+    grid-template-columns: repeat(4, 1fr); 
+
     height: 650px;
     display: flex;
     flex-wrap: wrap;
@@ -204,8 +206,8 @@ display: block;
 }
 
 .project {
-    width: 250px;
-    height: 200px;
+    width: 350px;
+    height: 300px;
     text-align: center;
     border: 1px solid #ddd;
     border-radius: 5px;
