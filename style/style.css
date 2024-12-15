@@ -164,7 +164,10 @@ section {
     width: 100vw;
     justify-content: center;
 }
-
+#me h3{
+    text-align: center;
+    font-size: 40px;
+}
 .me-container {
     display: flex;
     align-items: center;
@@ -191,27 +194,28 @@ display: block;
 
 
 /* Portfolio Section */
-#portfolio h2{
+#portfolio h2 {
     text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
 }
-.projects-container {
-    grid-template-columns: repeat(4, 1fr); 
 
-    height: 650px;
-    display: flex;
-    flex-wrap: wrap;
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three items per row */
+    gap: 50px; 
     justify-content: center;
-    gap: 0px;
-   /* background-color: #e8e0e0;*/
+    align-items: center;
+    padding: 0 400px;
 }
 
 .project {
-    width: 350px;
+    width: 100%; 
+    max-width: 350px; 
     height: 300px;
     text-align: center;
     border: 1px solid #ddd;
     border-radius: 5px;
-    margin-top: 100px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -244,16 +248,16 @@ display: block;
     opacity: 0; 
     transition: visibility 0.3s, opacity 0.3s ease-in-out;
 }
+
 .project:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
+
 .project:hover p {
     visibility: visible; 
     opacity: 1;
 }
-
-
 
 
 
@@ -268,7 +272,7 @@ display: block;
 }
 
 #skills h2 {
-    font-size: 2rem;
+    font-size: 40px;
     margin-bottom: 20px;
 }
 
