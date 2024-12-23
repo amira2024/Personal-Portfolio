@@ -22,23 +22,24 @@ window.addEventListener("resize", () => {
 });
 
 
-// Form validation
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-    // Prevent form submission to check validation
-    event.preventDefault();
+document.getElementById("contact-form").addEventListener("submit", async function(event) {
+    event.preventDefault(); // Prevent default form submission
 
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let message = document.getElementById("message").value;
+    let formData = new FormData(this); 
 
-    // Simple validation to ensure fields are not empty
-    if (name && email && message) {
-        alert("Thank you for reaching out! I'll get back to you soon.");
-        document.getElementById("contact-form").reset(); // Reset form after submission
-    } else {
-        alert("Please fill out all fields.");
+    try {
+        let response = await fetch('send-email.php', {
+            method: 'POST',
+            body: formData,
+        });
+
+        let result = await response.text(); 
+        alert(result); 
+    } catch (error) {
+        alert('Failed to send message. Please try again later.');
     }
 });
+
 
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
