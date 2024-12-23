@@ -25,21 +25,38 @@ window.addEventListener("resize", () => {
 document.getElementById("contact-form").addEventListener("submit", async function(event) {
     event.preventDefault(); // Prevent default form submission
 
-    let formData = new FormData(this); 
+  
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let message = document.getElementById("message").value.trim();
 
-    try {
-        let response = await fetch('send-email.php', {
-            method: 'POST',
-            body: formData,
-        });
+    // Simple validation to ensure fields are not empty
+    if (name && email && message) {
+        let formData = new FormData();
+        formData.append("name", name);
+        formData.append("email", email);
+        formData.append("message", message);
 
-        let result = await response.text(); 
-        alert(result); 
-    } catch (error) {
-        alert('Failed to send message. Please try again later.');
+        try {
+            let response = await fetch('send-email.php', {
+                method: 'POST',
+                body: formData,
+            });
+
+            let result = await response.text();
+            alert(result); 
+
+     
+            if (result.toLowerCase().includes("success")) {
+                document.getElementById("contact-form").reset();
+            }
+        } catch (error) {
+            alert("Failed to send message. Please try again later.");
+        }
+    } else {
+        alert("Please fill out all fields.");
     }
 });
-
 
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
