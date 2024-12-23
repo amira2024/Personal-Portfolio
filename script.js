@@ -48,6 +48,7 @@ document.getElementById("contact-form").addEventListener("submit", async functio
 
      
             if (result.toLowerCase().includes("success")) {
+                alert("Thank you for reaching out! I'll get back to you soon.");
                 document.getElementById("contact-form").reset();
             }
         } catch (error) {
