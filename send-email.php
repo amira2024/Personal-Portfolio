@@ -1,25 +1,40 @@
 <?php
+// Enable error reporting for debugging
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
     $name = htmlspecialchars(trim($_POST['name']));
-    $email = filter_var(trim($_POST['email']), FILTER_VALIDATE_EMAIL);
+    $email = htmlspecialchars(trim($_POST['email']));
     $message = htmlspecialchars(trim($_POST['message']));
 
-    if (!$name || !$email || !$message) {
-        echo "Please fill in all fields correctly.";
+    if (empty($name) || empty($email) || empty($message)) {
+        echo "All fields are required.";
         exit;
     }
 
-    $to = "amiragarba13@gmail.com";
-    $subject = "Contact Form Submission";
-    $messageContent = "Name: $name\nEmail: $email\nMessage: $message";
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Invalid email format.";
+        exit;
+    }
+
+    $to = "amiragarba13@gmail.com"; 
+    $subject = "New Contact Form Message from $name";
     $headers = "From: $email\r\n";
     $headers .= "Reply-To: $email\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
-    if (mail($to, $subject, $messageContent, $headers)) {
-        echo "Thank you for contacting us! We will get back to you soon.";
+    $body = "Name: $name\n";
+    $body .= "Email: $email\n\n";
+    $body .= "Message:\n$message\n";
+
+    if (mail($to, $subject, $body, $headers)) {
+        echo "Message sent successfully!";
     } else {
-        echo "There was an issue with sending your message. Please try again later.";
+        echo "Failed to send the message.";
     }
+} else {
+    echo "Invalid request.";
 }
 ?>
